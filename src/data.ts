@@ -1,4 +1,69 @@
-export const portfolioData = {
+export interface Education {
+  degree: string;
+  institution: string;
+  duration: string;
+  details?: string;
+  result?: string;
+  logo: string;
+  certificateUrl?: string;
+}
+
+export interface WorkExperience {
+  title: string;
+  company: string;
+  description: string;
+  logo?: string;
+  imageUrl?: string;
+  certificateUrl?: string;
+}
+
+export interface Certification {
+  title: string;
+  year: string;
+  logo?: string;
+  imageUrl?: string;
+  certificateUrl?: string;
+}
+
+export interface Skill {
+  name: string;
+  logo?: string;
+}
+
+export interface PortfolioData {
+  name: string;
+  photo: string;
+  resumeUrl: string;
+  specialization: string;
+  availability: string;
+  tagline: string;
+  objective: string;
+  contact: {
+    phone: string;
+    email: string;
+    linkedin: string;
+    location: string;
+  };
+  strengths: { title: string; description: string }[];
+  techStack: {
+    [key: string]: Skill[];
+  };
+  education: Education[];
+  projects: {
+    type: string;
+    title: string;
+    description: string;
+    tags: string[];
+    imageUrl: string;
+    certificateUrl: string;
+  }[];
+  certifications: Certification[];
+  workExperience: WorkExperience[];
+  languages: string[];
+  interests: string[];
+}
+
+export const portfolioData: PortfolioData = {
   name: "RAKSHA R SHETTY",
   photo: "/raksha.jpeg",
   resumeUrl: "certificates/raksha.pdf", // Placeholder for resume download

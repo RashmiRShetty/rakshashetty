@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { GraduationCap, Briefcase, Award, Image as ImageIcon, X } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData, Education, WorkExperience, Certification } from '../data';
 
 export const Experience = () => {
   const [selectedCert, setSelectedCert] = useState<{title: string, imageUrl: string, certificateUrl?: string} | null>(null);
@@ -16,7 +16,7 @@ export const Experience = () => {
               Academic Background
             </h2>
             <div className="space-y-12">
-              {portfolioData.education.map((edu, i) => (
+              {(portfolioData.education as Education[]).map((edu, i) => (
                 <div key={i} className="group relative pl-16">
                   {/* Vertical Line Connector */}
                   {i !== portfolioData.education.length - 1 && (
@@ -57,7 +57,7 @@ export const Experience = () => {
               Professional Experience
             </h2>
             <div className="space-y-12">
-              {portfolioData.workExperience.map((exp, i) => (
+              {(portfolioData.workExperience as WorkExperience[]).map((exp, i) => (
                 <div key={i} className="group relative pl-16">
                   {/* Vertical Line Connector */}
                   {i !== portfolioData.workExperience.length - 1 && (
@@ -103,7 +103,7 @@ export const Experience = () => {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {portfolioData.certifications.map((cert, i) => (
+            {(portfolioData.certifications as Certification[]).map((cert, i) => (
               <div key={i} className="group flex flex-col bg-slate-900/40 backdrop-blur-sm border border-slate-800/50 rounded-2xl hover:border-blue-500/30 transition-all p-7 min-h-[220px]">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 overflow-hidden border border-slate-800/50 group-hover:scale-110 transition-transform duration-300">
