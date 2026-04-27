@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Phone, Sparkles, Wallet, TrendingUp, PieChart, Calculator } from 'lucide-react';
+import { Linkedin, Mail, Phone, MapPin, Sparkles, Wallet, TrendingUp, PieChart, Calculator } from 'lucide-react';
 import { portfolioData } from '../data';
 
 export const Hero = () => (

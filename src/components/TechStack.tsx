@@ -12,7 +12,7 @@ import {
   LineChart,
   Table as TableIcon
 } from 'lucide-react';
-import { portfolioData, Skill } from '../data';
+import { portfolioData } from '../data';
 
 export const TechStack = () => {
   const categoryIcons = {
@@ -69,7 +69,7 @@ export const TechStack = () => {
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">
-                  {(skills as Skill[]).map((skill, i) => (
+                  {skills.map((skill, i) => (
                     <div key={i} className="flex flex-col items-center justify-center p-4 rounded-2xl bg-slate-800/30 border border-slate-800/50 hover:border-blue-500/30 hover:bg-slate-800/50 transition-all duration-300 group/item text-center">
                       <div className="w-10 h-10 rounded-xl bg-slate-900/50 flex items-center justify-center mb-3 border border-slate-800 group-hover/item:scale-110 group-hover/item:bg-blue-500/10 transition-all duration-300">
                         {getSkillIcon(skill.name, skill.logo)}
