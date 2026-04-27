@@ -41,17 +41,7 @@ export const Experience = () => {
                     </div>
                     
                     <h3 className="text-xl font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">{edu.degree}</h3>
-                    <p className="text-slate-400 text-sm mb-4 leading-relaxed font-medium">{edu.institution}</p>
-                    
-                    {edu.imageUrl && (
-                      <button 
-                        onClick={() => setSelectedCert({ title: edu.degree, imageUrl: edu.imageUrl!, certificateUrl: edu.certificateUrl })}
-                        className="inline-flex items-center gap-2 text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors group/btn"
-                      >
-                        <Award size={14} className="group-hover/btn:rotate-12 transition-transform" />
-                        VIEW ACADEMIC CERTIFICATE
-                      </button>
-                    )}
+                    <p className="text-slate-400 text-sm leading-relaxed font-medium">{edu.institution}</p>
                   </div>
                 </div>
               ))}
