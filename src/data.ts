@@ -23,20 +23,20 @@ export const portfolioData = {
       { name: "Advanced Data Analytics", logo: "/logos/excel.png" },
       { name: "Tally Prime", logo: "/logos/tally.jpg" },
       { name: "Business Intelligence", logo: "/logos/power.jpg" },
-      { name: "Financial Reporting" },
-      { name: "Accounting Principles" }
+      { name: "Financial Reporting", logo: undefined },
+      { name: "Accounting Principles", logo: undefined }
     ],
     hr: [
-      { name: "Human Resources Management" },
-      { name: "Employee Relations" },
-      { name: "Statuary Compliance" },
-      { name: "Performance Management" }
+      { name: "Human Resources Management", logo: undefined },
+      { name: "Employee Relations", logo: undefined },
+      { name: "Statuary Compliance", logo: undefined },
+      { name: "Performance Management", logo: undefined }
     ],
     tools: [
       { name: "Power Point", logo: "/logos/ppt.png" },
       { name: "Word", logo: "/logos/word.png" },
-      { name: "Data Analysis" },
-      { name: "Research Methodology" }
+      { name: "Data Analysis", logo: undefined },
+      { name: "Research Methodology", logo: undefined }
     ]
   },
   education: [

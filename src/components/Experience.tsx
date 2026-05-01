@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { GraduationCap, Briefcase, Award, ExternalLink, Image as ImageIcon, X } from 'lucide-react';
+import { GraduationCap, Briefcase, Award, Image as ImageIcon, X } from 'lucide-react';
 import { portfolioData } from '../data';
 
 export const Experience = () => {
